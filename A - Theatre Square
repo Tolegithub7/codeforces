@@ -1,0 +1,6 @@
+import math
+x,y,z = map(int, input().split())
+row = math.ceil(x/z)
+column = math.ceil(y/z)
+result = row * column 
+print (result)
