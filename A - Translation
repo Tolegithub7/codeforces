@@ -1,0 +1,9 @@
+s = input()
+t = input()
+def language(s, t):
+    reversed_word = s[::-1]
+    if reversed_word == t:
+        print("YES")
+    else:
+        print("NO")
+language(s,t)
