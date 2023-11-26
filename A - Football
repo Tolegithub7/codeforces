@@ -1,0 +1,25 @@
+def is_dangerous(situation):
+    consequence_count = 0
+    for players in situation:
+        if players == "1" :
+            consequence_count += 1
+        else:
+            consequence_count = 0
+        if consequence_count >= 7:
+            return True
+    for players in situation:
+        if players == "0" :
+            consequence_count += 1
+        else:
+            consequence_count = 0
+        if consequence_count >= 7:
+            return True
+    return False
+def main():
+    situation =  input()
+    if is_dangerous(situation):
+        print ("YES")
+    else:
+        print ("NO")
+if __name__ == "__main__":
+    main()
