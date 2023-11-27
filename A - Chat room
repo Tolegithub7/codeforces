@@ -1,0 +1,14 @@
+def check_hello(word):
+    hello = "hello"
+    i = 0
+    for char in word:
+        if i < 5 and char == hello[i]:
+            i += 1
+        if i == 5:
+            return "YES"
+    return "NO"
+ 
+word = input()
+ 
+result = check_hello(word)
+print(result)  
