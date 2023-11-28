@@ -1,0 +1,11 @@
+def implement():
+    solved_problem = 0
+    n = int(input())
+    for i in range (n):
+        num1, num2, num3 = map(int, input().split())
+        sum_view = num1 + num2 + num3
+        if sum_view >= 2 :
+            solved_problem += 1
+    return solved_problem
+result = implement()
+print(result)
