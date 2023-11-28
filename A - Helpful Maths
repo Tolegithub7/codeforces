@@ -1,0 +1,7 @@
+def arrange(sum):
+  split = sum.split("+")
+  split.sort()
+  arranged_sum = "+".join(split)
+  return arranged_sum
+sum = input()
+print(arrange(sum))
