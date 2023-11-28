@@ -1,0 +1,13 @@
+def ultra_fast_mathematician(a, b):
+ 
+  answer = ""
+  for i in range(len(a)):
+    if a[i] != b[i]:
+      answer += "1"
+    else:
+      answer += "0"
+  return answer
+a = input()
+b = input()
+answer = ultra_fast_mathematician(a, b)
+print(answer)
