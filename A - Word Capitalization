@@ -1,0 +1,8 @@
+def word_capitalization(t):
+  first_letter = t[0]
+  c_first_letter = first_letter.upper()
+  rest_letter = t[1:]
+  g_letter = c_first_letter + rest_letter
+  return g_letter
+t = input()
+print(word_capitalization(t))
