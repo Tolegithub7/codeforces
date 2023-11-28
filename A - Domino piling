@@ -1,0 +1,7 @@
+def calculate_max_dominoes():
+    m, n = map(int, input().split())
+    total_squares = m * n
+    max_dominoes = total_squares // 2
+    return max_dominoes
+result = calculate_max_dominoes()
+print(result)
