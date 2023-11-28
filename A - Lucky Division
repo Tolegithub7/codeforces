@@ -1,0 +1,14 @@
+
+def is_lucky(n):
+    if all(digit in "47" for digit in str(n)):
+        return True
+    lucky_numbers = ['4', '7', '44', '77', '47', '74']
+    for luck_number in lucky_numbers:
+        if int(n) % int(luck_number) == 0:
+            return True
+    return False
+n = int(input())
+if is_lucky(n):
+    print("YES")
+else:
+    print("NO")
