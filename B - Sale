@@ -1,0 +1,12 @@
+import math
+n, m = map(int, input().split())
+prices = list(map(int, input().split()))
+price = sorted(prices)
+def max_profit(price, m):
+    # price.sort()
+    total_sum = 0
+    for i in range(m):
+        if price[i] <= 0:
+            total_sum += price[i]
+    return total_sum
+print(int(math.fabs(max_profit(price, m))))
