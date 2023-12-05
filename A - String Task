@@ -1,0 +1,9 @@
+def string_task(s):
+    vowels = set("AOYEUIaoyeui")
+    result = ""
+    for c in s:
+        if c not in vowels:
+            result += "." + c.lower()
+    return result
+s = input()
+print(string_task(s))
