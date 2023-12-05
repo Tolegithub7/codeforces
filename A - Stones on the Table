@@ -1,0 +1,15 @@
+def find_min_stones_to_remove(stones):
+  num_stones_to_remove = 0
+  previous_stone = None
+  for stone in stones:
+    if previous_stone is not None and stone == previous_stone:
+      num_stones_to_remove += 1
+    else:
+      previous_stone = stone
+ 
+  return num_stones_to_remove
+n = int(input())
+stones = input()
+num_stones_to_remove = find_min_stones_to_remove(stones)
+ 
+print(num_stones_to_remove)
