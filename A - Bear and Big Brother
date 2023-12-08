@@ -1,0 +1,10 @@
+Limak, Bob = map(int, input().split())
+count = 0   
+for i in range(Bob):
+    if Limak <= Bob:
+        Limak = Limak*3
+        Bob = Bob*2
+        count += 1
+    else:
+        break
+print(count)
